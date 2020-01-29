@@ -22,15 +22,15 @@ app.set('views', viewsPath)
 
 app.get('',(req,res) => {
   res.render('index', {
-    title: 'Weatherer',
-    name: 'Andrew Meadd'
+    title: 'Weather',
+    name: 'Guilherme Reis'
   })
 })
 
 app.get('/about', (req, res) => {
   res.render('about', {
     title:'About page',
-    name: 'Andrew Mead'
+    name: 'Guilherme Reis'
   })
 
 })  
@@ -39,7 +39,7 @@ app.get('/help', (req, res) => {
   res.render('help', {
     helpText: 'This is some help text',
     title:'Help page',
-    name: 'Andrew Mead'
+    name: 'Guilherme Reis'
   })
 
 })  
@@ -87,7 +87,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
   res.render('404',{
     title: '404',
-    name:'Andrew Mead',
+    name:'Guilherme Reis',
     helpfulMsg: 'Help article not found'
   })
 
@@ -96,7 +96,7 @@ app.get('/help/*', (req, res) => {
 app.get('*', (req, res) => {
     res.render('404',{
       title: '404',
-      name:'Andrew Mead',
+      name:'Guilherme Reis',
       helpfulMsg: 'Page not found'
     })
 
